@@ -17,19 +17,19 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"ichbinkk.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"ichbinkk.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Install CGAL and Demos in win10+msvc2017x64      To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.   package &amp; verisoncgal 4.13cmake 3.14qt 5.">
+  <meta name="description" content="Install CGAL and Demos in win10+msvc2017x64    To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.   package &amp; verisoncgal 4.13cmake 3.14qt 5.12">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cgal-win10">
 <meta property="og:url" content="https://ichbinkk.github.io/2020/10/07/cgal-win10/index.html">
 <meta property="og:site_name" content="KK hub">
-<meta property="og:description" content="Install CGAL and Demos in win10+msvc2017x64      To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.   package &amp; verisoncgal 4.13cmake 3.14qt 5.">
+<meta property="og:description" content="Install CGAL and Demos in win10+msvc2017x64    To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.   package &amp; verisoncgal 4.13cmake 3.14qt 5.12">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ichbinkk.github.io/images/cgal.png">
 <meta property="article:published_time" content="2020-10-07T13:55:49.000Z">
-<meta property="article:modified_time" content="2020-10-10T09:50:00.583Z">
+<meta property="article:modified_time" content="2020-10-10T11:27:40.955Z">
 <meta property="article:author" content="K.K">
 <meta property="article:tag" content="cgal">
 <meta property="article:tag" content="win10">
@@ -103,7 +103,7 @@
       <h1 class="site-title">KK hub</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">follow your heart</p>
+      <p class="site-subtitle" itemprop="description">Follow your heart</p>
   </div>
 
   <div class="site-nav-right">
@@ -200,10 +200,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-10 17:50:00" itemprop="dateModified" datetime="2020-10-10T17:50:00+08:00">2020-10-10</time>
+                <time title="修改时间：2020-10-10 19:27:40" itemprop="dateModified" datetime="2020-10-10T19:27:40+08:00">2020-10-10</time>
               </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -217,20 +224,15 @@
         <h1 id="Install-CGAL-and-Demos-in-win10-msvc2017x64"><a href="#Install-CGAL-and-Demos-in-win10-msvc2017x64" class="headerlink" title="Install CGAL and Demos in win10+msvc2017x64"></a><strong>Install CGAL and Demos in win10+msvc2017x64</strong></h1><hr>
 <img src="https://ichbinkk.github.io/images/cgal.png" width="100%"> 
 
-
-
 <p>To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.  </p>
 <h2 id="package-amp-verison"><a href="#package-amp-verison" class="headerlink" title="package &amp; verison"></a>package &amp; verison</h2><p>cgal 4.13<br>cmake 3.14<br>qt 5.12.3<br>boost 1.70.0 </p>
-<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><ol>
-<li>Qt<br>First of all, download the <a target="_blank" rel="noopener" href="http://download.qt.io/archive/qt/">qt5</a> in the latest version and i choosed 5.12.3.Then install as following steps.Just make sure you have clicked msvc2017x64 and scriptsTool in install components options. Add C:\Qt\Qt5.12.3\5.12.3\msvc2017_64\bin to system path.</li>
-<li>CMake<br>Install <a target="_blank" rel="noopener" href="https://cmake.org/">cmake</a> in the latest version and i choosed 3.14. Someone said need add the cmake modules paths to the system. I haven’t added and it still worked.</li>
-<li>Boost<br>Boost library has open resource in<br><a target="_blank" rel="noopener" href="http://www.boost.org/users/download/">http://www.boost.org/users/download/</a><br>and you can compile it to get the binary libaraies in you pc. For convenience, i downloaded the Boost(1.70.0) binary libraries in <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/boost/files/boost-binaries/">https://sourceforge.net/projects/boost/files/boost-binaries/</a><br>Unzip the Boost to any path, then add path/to/boost/lib64-msvc-14.1 to system Path. Add <em>BOOST_INCLUDEDIR</em> as path/to/Boost (mine is C:\local\boost_1_70_0) in your system path, Add <em>BOOST_LIBRARYDIR</em> as path/to/Boost library (mine is C:\local\boost_1_70_0\lib64-msvc-14.1) in your system path.</li>
-<li>Install CGAL.  <ol>
+<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><h3 id="1-Qt"><a href="#1-Qt" class="headerlink" title="1. Qt"></a>1. Qt</h3><p>First of all, download the <a target="_blank" rel="noopener" href="http://download.qt.io/archive/qt/">qt5</a> in the latest version and i choosed 5.12.3.Then install as following steps.Just make sure you have clicked msvc2017x64 and scriptsTool in install components options. Add C:\Qt\Qt5.12.3\5.12.3\msvc2017_64\bin to system path.</p>
+<h3 id="2-CMake"><a href="#2-CMake" class="headerlink" title="2. CMake"></a>2. CMake</h3><p>Install <a target="_blank" rel="noopener" href="https://cmake.org/">cmake</a> in the latest version and i choosed 3.14. Someone said need add the cmake modules paths to the system. I haven’t added and it still worked.</p>
+<h3 id="3-Boost"><a href="#3-Boost" class="headerlink" title="3. Boost"></a>3. Boost</h3><p>Boost library has open resource in<br><a target="_blank" rel="noopener" href="http://www.boost.org/users/download/">http://www.boost.org/users/download/</a><br>and you can compile it to get the binary libaraies in you pc. For convenience, i downloaded the Boost(1.70.0) binary libraries in <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/boost/files/boost-binaries/">https://sourceforge.net/projects/boost/files/boost-binaries/</a><br>Unzip the Boost to any path, then add path/to/boost/lib64-msvc-14.1 to system Path. Add <em>BOOST_INCLUDEDIR</em> as path/to/Boost (mine is C:\local\boost_1_70_0) in your system path, Add <em>BOOST_LIBRARYDIR</em> as path/to/Boost library (mine is C:\local\boost_1_70_0\lib64-msvc-14.1) in your system path.</p>
+<h3 id="4-Install-CGAL"><a href="#4-Install-CGAL" class="headerlink" title="4. Install CGAL"></a>4. Install CGAL</h3><ol>
 <li>If none of the above steps goes wrong, you can begin to install CGAL libraries.Download the <a target="_blank" rel="noopener" href="https://www.cgal.org/">CGAL</a> and unzip to your pc.Please remember the path to it cause we will use it later. Add  CGAL_DIR as path/to/CGAL (mine is C:\dev\CGAL-4.13.1) and <em>C:\dev\CGAL-4.13.1\auxiliary\gmp\lib</em> in system path.</li>
 <li>Open CmakeGUI which you installed in step2, set the source code dir to path/to/CGAL (mine is C:/dev/CGAL-4.13.1), build the binaries dir to path wherever you like.(mine is C:\dev\CGAL-4.13.1\build).Then click the configure button and choose <strong><em>vs2017 win64</em></strong>. If there is no errors shown in screen, click build button.  </li>
 <li>Open the <strong><em>.sln</em></strong> file with <strong><em>vs2017 64</em></strong> in your build path you set in CmakeGUI, and build all projects both in debug and release mode.  </li>
-</ol>
-</li>
 </ol>
 <p>Congratulations, you are finished to build the CGAL<br>binary libraries in the path/to/build/bin. For convenience, you should add this path to system path to use the CGAL in projects you like.  </p>
 <h2 id="Install-CGAL-demos-and-examples"><a href="#Install-CGAL-demos-and-examples" class="headerlink" title="Install CGAL demos and examples"></a>Install CGAL demos and examples</h2><p>For now, you maybe wanna build the CGAL demos and examples to learn how to use CGAL libraries.It still need  additional several Dependency Libraries. I just had installed Eigen3, TBB, Metis to build <em>Polyhedron</em> demo. Maybe you want to install all Dependency Libraries and I admire your courage and endurance. The instructions are similar as belows.  </p>
@@ -340,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-CGAL-and-Demos-in-win10-msvc2017x64"><span class="nav-number">1.</span> <span class="nav-text">Install CGAL and Demos in win10+msvc2017x64</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#package-amp-verison"><span class="nav-number">1.1.</span> <span class="nav-text">package &amp; verison</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Steps"><span class="nav-number">1.2.</span> <span class="nav-text">Steps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-CGAL-demos-and-examples"><span class="nav-number">1.3.</span> <span class="nav-text">Install CGAL demos and examples</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-CGAL-and-Demos-in-win10-msvc2017x64"><span class="nav-number">1.</span> <span class="nav-text">Install CGAL and Demos in win10+msvc2017x64</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#package-amp-verison"><span class="nav-number">1.1.</span> <span class="nav-text">package &amp; verison</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Steps"><span class="nav-number">1.2.</span> <span class="nav-text">Steps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Qt"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. Qt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-CMake"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. CMake</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Boost"><span class="nav-number">1.2.3.</span> <span class="nav-text">3. Boost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Install-CGAL"><span class="nav-number">1.2.4.</span> <span class="nav-text">4. Install CGAL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-CGAL-demos-and-examples"><span class="nav-number">1.3.</span> <span class="nav-text">Install CGAL demos and examples</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -366,6 +368,20 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ichbinkk" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ichbinkk" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/ichbinwk@gmail.com" title="E-Mail → ichbinwk@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/ichbinwk" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;ichbinwk" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/ichbinwk" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;ichbinwk" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
 
 
 
@@ -411,6 +427,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
