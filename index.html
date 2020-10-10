@@ -161,6 +161,69 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ichbinkk.github.io/2020/10/10/igl-ubuntu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="K.K">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="KK hub">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/10/igl-ubuntu/" class="post-title-link" itemprop="url">igl-ubuntu</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-10 10:45:25 / 修改时间：10:57:20" itemprop="dateCreated datePublished" datetime="2020-10-10T10:45:25+08:00">2020-10-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>To install igl in the latest Ubuntu, many tutorials pointed out to compile openResource by yourself. I tried to install all directly using <code>apt install </code> or <code>apt-get install</code>, it worked in Ubuntu 16.04. For Ubuntu 18.04, i thought it is same as before but it failed strangely. I will go on to make it.</p>
+<h6 id="Dependency-Libraries"><a href="#Dependency-Libraries" class="headerlink" title="Dependency Libraries"></a>Dependency Libraries</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libboost-all-dev libgmp-dev libgmp3-dev libmpfr-dev geomview</span><br><span class="line">sudo apt-get install freeglut3 freeglut3-dev</span><br><span class="line">sudo apt-get install binutils-gold</span><br><span class="line">sudo apt-get install libglew-dev</span><br><span class="line">sudo apt-get install g++</span><br><span class="line">sudo apt-get install mesa-common-dev</span><br><span class="line">sudo apt-get install cmake build-essential  </span><br><span class="line">sudo apt-get install libeigen3-dev</span><br><span class="line">sudo apt-get install libtbb-dev</span><br><span class="line">sudo apt-get install libmetis-dev libmetis5 </span><br><span class="line">sudo apt-get install zlib1g-dev</span><br></pre></td></tr></table></figure>
+<h6 id="cmake-gui"><a href="#cmake-gui" class="headerlink" title="cmake-gui"></a>cmake-gui</h6><p>If ‘CoMISo’ has error, cancel the ‘build with CoMISo’ in cmake-gui.</p>
+<h6 id="GLFW"><a href="#GLFW" class="headerlink" title="GLFW"></a>GLFW</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libxrandr-dev <span class="comment">#The RandR library and headers were not found</span></span><br><span class="line">sudo apt-get install libxi-dev <span class="comment">#The XInput library and headers were not found</span></span><br><span class="line">sudo apt-get install libsdl2-dev <span class="comment">#The Xinerama library and headers were not found</span></span><br></pre></td></tr></table></figure>
+<h6 id="Began-compile"><a href="#Began-compile" class="headerlink" title="Began compile"></a>Began compile</h6><p>open terminal in Igl folder</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir build &amp;&amp; <span class="built_in">cd</span> build</span><br><span class="line">cmake ..</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://ichbinkk.github.io/2020/10/07/cgal-win10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,14 +457,14 @@ tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz</code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
