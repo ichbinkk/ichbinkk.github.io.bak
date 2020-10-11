@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ichbinkk.github.io/images/cgal.png">
 <meta property="article:published_time" content="2020-10-07T13:55:49.000Z">
-<meta property="article:modified_time" content="2020-10-11T02:58:14.164Z">
+<meta property="article:modified_time" content="2020-10-11T10:54:52.348Z">
 <meta property="article:author" content="K.K">
 <meta property="article:tag" content="cgal">
 <meta property="article:tag" content="win10">
@@ -154,7 +154,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -220,8 +220,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-11 10:58:14" itemprop="dateModified" datetime="2020-10-11T10:58:14+08:00">2020-10-11</time>
+                <time title="修改时间：2020-10-11 18:54:52" itemprop="dateModified" datetime="2020-10-11T18:54:52+08:00">2020-10-11</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85cgal%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">编译安装cgal库</span></a>
+                </span>
+            </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -265,18 +274,16 @@
 <h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><h3 id="1-Qt"><a href="#1-Qt" class="headerlink" title="1. Qt"></a>1. Qt</h3><p>First of all, download the <a target="_blank" rel="noopener" href="http://download.qt.io/archive/qt/">qt5</a> in the latest version and i choosed 5.12.3.Then install as following steps.Just make sure you have clicked msvc2017x64 and scriptsTool in install components options. Add C:\Qt\Qt5.12.3\5.12.3\msvc2017_64\bin to system path.</p>
 <h3 id="2-CMake"><a href="#2-CMake" class="headerlink" title="2. CMake"></a>2. CMake</h3><p>Install <a target="_blank" rel="noopener" href="https://cmake.org/">cmake</a> in the latest version and i choosed 3.14. Someone said need add the cmake modules paths to the system. I haven’t added and it still worked.</p>
 <h3 id="3-Boost"><a href="#3-Boost" class="headerlink" title="3. Boost"></a>3. Boost</h3><p>Boost library has open resource in<br><a target="_blank" rel="noopener" href="http://www.boost.org/users/download/">http://www.boost.org/users/download/</a><br>and you can compile it to get the binary libaraies in you pc. For convenience, i downloaded the Boost(1.70.0) binary libraries in <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/boost/files/boost-binaries/">https://sourceforge.net/projects/boost/files/boost-binaries/</a><br>Unzip the Boost to any path, then add path/to/boost/lib64-msvc-14.1 to system Path. Add <em>BOOST_INCLUDEDIR</em> as path/to/Boost (mine is C:\local\boost_1_70_0) in your system path, Add <em>BOOST_LIBRARYDIR</em> as path/to/Boost library (mine is C:\local\boost_1_70_0\lib64-msvc-14.1) in your system path.</p>
-<h3 id="4-Install-CGAL"><a href="#4-Install-CGAL" class="headerlink" title="4. Install CGAL"></a>4. Install CGAL</h3><ol>
+<h3 id="4-Install-CGAL"><a href="#4-Install-CGAL" class="headerlink" title="4. Install CGAL"></a>4. Install CGAL</h3><ul>
 <li>If none of the above steps goes wrong, you can begin to install CGAL libraries.Download the <a target="_blank" rel="noopener" href="https://www.cgal.org/">CGAL</a> and unzip to your pc.Please remember the path to it cause we will use it later. Add  CGAL_DIR as path/to/CGAL (mine is C:\dev\CGAL-4.13.1) and <em>C:\dev\CGAL-4.13.1\auxiliary\gmp\lib</em> in system path.</li>
 <li>Open CmakeGUI which you installed in step2, set the source code dir to path/to/CGAL (mine is C:/dev/CGAL-4.13.1), build the binaries dir to path wherever you like.(mine is C:\dev\CGAL-4.13.1\build).Then click the configure button and choose <strong><em>vs2017 win64</em></strong>. If there is no errors shown in screen, click build button.  </li>
 <li>Open the <strong><em>.sln</em></strong> file with <strong><em>vs2017 64</em></strong> in your build path you set in CmakeGUI, and build all projects both in debug and release mode.  </li>
-</ol>
+</ul>
 <p>Congratulations, you are finished to build the CGAL<br>binary libraries in the path/to/build/bin. For convenience, you should add this path to system path to use the CGAL in projects you like.  </p>
 <h2 id="Install-CGAL-demos-and-examples"><a href="#Install-CGAL-demos-and-examples" class="headerlink" title="Install CGAL demos and examples"></a>Install CGAL demos and examples</h2><p>For now, you maybe wanna build the CGAL demos and examples to learn how to use CGAL libraries.It still need  additional several Dependency Libraries. I just had installed Eigen3, TBB, Metis to build <em>Polyhedron</em> demo. Maybe you want to install all Dependency Libraries and I admire your courage and endurance. The instructions are similar as belows.  </p>
-<ol>
-<li>Eigen3<br>Download the <a target="_blank" rel="noopener" href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3</a> library and unzip in anywhere you like.Set <em>EIGEN3_DIR</em> as path/to/Eigen3 (mine D:\Env\eigen3) in system path.  </li>
-<li>TBB<br>Download <a target="_blank" rel="noopener" href="https://github.com/intel/tbb/releases">TBB</a> and unzip in anywhere you like.Add path/to/tbb/bin/intel64/vc14 (D:\Env\tbb2019\bin\intel64\vc14),add <em>TBB_ARCH_PLATFORM</em> as <em>intel64\vc14</em> and  <em>TBBROOT</em> as path/to/tbb (D:\Env\tbb2019) to system path. <strong>Notes</strong>: No matter what your computer CPU is Intel or AMD, it all worked. Besides, AMD YES!  </li>
-<li>Metis<br>Download <a target="_blank" rel="noopener" href="http://glaros.dtc.umn.edu/gkhome/metis/metis/download">Metis</a> and unzip in <em>D:\Env\metis-5.1.0</em>. Using CmakeGUI to build the Metis binary files in <em>D:\Env\metis-5.1.0\build</em>.<br>I found the module which set to find the Metis libraries have many mistakes in 4.13.1 version. So I rewrited it as simple as possible in C:\dev\CGAL-4.13.1\cmake\modules\FindMETIS.cmake. You can download new <a target="_blank" rel="noopener" href="https://drive.google.com/open?id=1kitBPLU_BHbRE-c9cfAEDRD4mm460ffy">FindMETIS.cmake</a> to replace the old version.Then add <em>METIS_INCLUDE_DIR</em> as <em>D:\Env\metis-5.1.0\include</em> and “METIS_LIBRARY_DIR” as <em>D:\Env\metis-5.1.0\build\libmetis\Release</em> to system path.</li>
-</ol>
+<h3 id="1-Eigen3"><a href="#1-Eigen3" class="headerlink" title="1. Eigen3"></a>1. Eigen3</h3><p>Download the <a target="_blank" rel="noopener" href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3</a> library and unzip in anywhere you like.Set <em>EIGEN3_DIR</em> as path/to/Eigen3 (mine D:\Env\eigen3) in system path.  </p>
+<h3 id="2-TBB"><a href="#2-TBB" class="headerlink" title="2. TBB"></a>2. TBB</h3><p>Download <a target="_blank" rel="noopener" href="https://github.com/intel/tbb/releases">TBB</a> and unzip in anywhere you like.Add path/to/tbb/bin/intel64/vc14 (D:\Env\tbb2019\bin\intel64\vc14),add <em>TBB_ARCH_PLATFORM</em> as <em>intel64\vc14</em> and  <em>TBBROOT</em> as path/to/tbb (D:\Env\tbb2019) to system path. <strong>Notes</strong>: No matter what your computer CPU is Intel or AMD, it all worked. Besides, AMD YES!  </p>
+<h3 id="3-Metis"><a href="#3-Metis" class="headerlink" title="3. Metis"></a>3. Metis</h3><p>Download <a target="_blank" rel="noopener" href="http://glaros.dtc.umn.edu/gkhome/metis/metis/download">Metis</a> and unzip in <em>D:\Env\metis-5.1.0</em>. Using CmakeGUI to build the Metis binary files in <em>D:\Env\metis-5.1.0\build</em>.<br>I found the module which set to find the Metis libraries have many mistakes in 4.13.1 version. So I rewrited it as simple as possible in C:\dev\CGAL-4.13.1\cmake\modules\FindMETIS.cmake. You can download new <a target="_blank" rel="noopener" href="https://drive.google.com/open?id=1kitBPLU_BHbRE-c9cfAEDRD4mm460ffy">FindMETIS.cmake</a> to replace the old version.Then add <em>METIS_INCLUDE_DIR</em> as <em>D:\Env\metis-5.1.0\include</em> and “METIS_LIBRARY_DIR” as <em>D:\Env\metis-5.1.0\build\libmetis\Release</em> to system path.</p>
 <p>If you have any question or problem in above steps, you can make comment on my website. I will check it sometimes and reply. </p>
 <p>Good Luck, buddy<del>~</del></p>
 
@@ -379,7 +386,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Package-amp-verison"><span class="nav-number">1.</span> <span class="nav-text">Package &amp; verison</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Steps"><span class="nav-number">2.</span> <span class="nav-text">Steps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Qt"><span class="nav-number">2.1.</span> <span class="nav-text">1. Qt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-CMake"><span class="nav-number">2.2.</span> <span class="nav-text">2. CMake</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Boost"><span class="nav-number">2.3.</span> <span class="nav-text">3. Boost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Install-CGAL"><span class="nav-number">2.4.</span> <span class="nav-text">4. Install CGAL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-CGAL-demos-and-examples"><span class="nav-number">3.</span> <span class="nav-text">Install CGAL demos and examples</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Package-amp-verison"><span class="nav-number">1.</span> <span class="nav-text">Package &amp; verison</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Steps"><span class="nav-number">2.</span> <span class="nav-text">Steps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Qt"><span class="nav-number">2.1.</span> <span class="nav-text">1. Qt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-CMake"><span class="nav-number">2.2.</span> <span class="nav-text">2. CMake</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Boost"><span class="nav-number">2.3.</span> <span class="nav-text">3. Boost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Install-CGAL"><span class="nav-number">2.4.</span> <span class="nav-text">4. Install CGAL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-CGAL-demos-and-examples"><span class="nav-number">3.</span> <span class="nav-text">Install CGAL demos and examples</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Eigen3"><span class="nav-number">3.1.</span> <span class="nav-text">1. Eigen3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-TBB"><span class="nav-number">3.2.</span> <span class="nav-text">2. TBB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Metis"><span class="nav-number">3.3.</span> <span class="nav-text">3. Metis</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -400,7 +407,7 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
