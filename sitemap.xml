@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ichbinkk.github.io/2020/10/11/hexo-FAQs/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ichbinkk.github.io/about/index.html</loc>
     
     <lastmod>2020-10-11</lastmod>
@@ -24,13 +31,6 @@
   
   <url>
     <loc>https://ichbinkk.github.io/2020/10/10/igl-ubuntu/</loc>
-    
-    <lastmod>2020-10-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ichbinkk.github.io/2020/10/11/hexo-FAQs/</loc>
     
     <lastmod>2020-10-11</lastmod>
     
@@ -74,6 +74,13 @@
   </url>
   
   <url>
+    <loc>https://ichbinkk.github.io/tags/win10/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ichbinkk.github.io/tags/Hexo/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
@@ -96,13 +103,6 @@
   
   <url>
     <loc>https://ichbinkk.github.io/tags/excerpt/</loc>
-    <lastmod>2020-10-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ichbinkk.github.io/tags/win10/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
