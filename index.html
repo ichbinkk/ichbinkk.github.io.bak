@@ -193,7 +193,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/10/10/igl-ubuntu/" class="post-title-link" itemprop="url">igl-ubuntu</a>
+            <a href="/2020/10/10/igl-ubuntu/" class="post-title-link" itemprop="url">Install igl in Ubuntu</a>
         </h2>
 
         <div class="post-meta">
@@ -202,10 +202,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-10-10 10:45:25 / Modified: 22:08:38" itemprop="dateCreated datePublished" datetime="2020-10-10T10:45:25+08:00">2020-10-10</time>
+              <time title="Created: 2020-10-10 10:45:25" itemprop="dateCreated datePublished" datetime="2020-10-10T10:45:25+08:00">2020-10-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-10-11 10:57:12" itemprop="dateModified" datetime="2020-10-11T10:57:12+08:00">2020-10-11</time>
+              </span>
 
           
 
@@ -222,12 +228,16 @@
             <p>To install igl in the latest Ubuntu, many tutorials pointed out to compile openResource by yourself.<br>I tried to install all directly using <code>apt install </code> or <code>apt-get install</code>, it worked in Ubuntu 18.04.</p>
           </div>
 
-
 <h3 id="Dependency-Libraries"><a href="#Dependency-Libraries" class="headerlink" title="Dependency Libraries"></a>Dependency Libraries</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libboost-all-dev libgmp-dev libgmp3-dev libmpfr-dev geomview</span><br><span class="line">sudo apt-get install freeglut3 freeglut3-dev</span><br><span class="line">sudo apt-get install binutils-gold</span><br><span class="line">sudo apt-get install libglew-dev</span><br><span class="line">sudo apt-get install g++</span><br><span class="line">sudo apt-get install mesa-common-dev</span><br><span class="line">sudo apt-get install cmake build-essential  </span><br><span class="line">sudo apt-get install libeigen3-dev</span><br><span class="line">sudo apt-get install libtbb-dev</span><br><span class="line">sudo apt-get install libmetis-dev libmetis5 </span><br><span class="line">sudo apt-get install zlib1g-dev</span><br></pre></td></tr></table></figure>
 <h3 id="cmake-gui"><a href="#cmake-gui" class="headerlink" title="cmake-gui"></a>cmake-gui</h3><p>If ‘CoMISo’ has error, cancel the ‘build with CoMISo’ in cmake-gui.</p>
-<h3 id="GLFW"><a href="#GLFW" class="headerlink" title="GLFW"></a>GLFW</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libxrandr-dev <span class="comment">#The RandR library and headers were not found</span></span><br><span class="line">sudo apt-get install libxi-dev <span class="comment">#The XInput library and headers were not found</span></span><br><span class="line">sudo apt-get install libsdl2-dev <span class="comment">#The Xinerama library and headers were not found</span></span><br></pre></td></tr></table></figure>
-<h3 id="Start-compile"><a href="#Start-compile" class="headerlink" title="Start compile"></a>Start compile</h3><p>open terminal in igl folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir build &amp;&amp; <span class="built_in">cd</span> build</span><br><span class="line">cmake ..</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/10/10/igl-ubuntu/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -260,7 +270,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/10/07/cgal-win10/" class="post-title-link" itemprop="url">cgal-win10</a>
+            <a href="/2020/10/07/cgal-win10/" class="post-title-link" itemprop="url">Install CGAL and Demos in win10+msvc2017x64</a>
         </h2>
 
         <div class="post-meta">
@@ -277,7 +287,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-10 19:27:40" itemprop="dateModified" datetime="2020-10-10T19:27:40+08:00">2020-10-10</time>
+                <time title="Modified: 2020-10-11 10:58:14" itemprop="dateModified" datetime="2020-10-11T10:58:14+08:00">2020-10-11</time>
               </span>
 
           
@@ -291,29 +301,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Install-CGAL-and-Demos-in-win10-msvc2017x64"><a href="#Install-CGAL-and-Demos-in-win10-msvc2017x64" class="headerlink" title="Install CGAL and Demos in win10+msvc2017x64"></a><strong>Install CGAL and Demos in win10+msvc2017x64</strong></h1><hr>
-<img src="https://ichbinkk.github.io/images/cgal.png" width="100%"> 
+          <img src="https://ichbinkk.github.io/images/cgal.png" width="100%">
 
-<p>To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first.  </p>
-<h2 id="package-amp-verison"><a href="#package-amp-verison" class="headerlink" title="package &amp; verison"></a>package &amp; verison</h2><p>cgal 4.13<br>cmake 3.14<br>qt 5.12.3<br>boost 1.70.0 </p>
-<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><h3 id="1-Qt"><a href="#1-Qt" class="headerlink" title="1. Qt"></a>1. Qt</h3><p>First of all, download the <a target="_blank" rel="noopener" href="http://download.qt.io/archive/qt/">qt5</a> in the latest version and i choosed 5.12.3.Then install as following steps.Just make sure you have clicked msvc2017x64 and scriptsTool in install components options. Add C:\Qt\Qt5.12.3\5.12.3\msvc2017_64\bin to system path.</p>
-<h3 id="2-CMake"><a href="#2-CMake" class="headerlink" title="2. CMake"></a>2. CMake</h3><p>Install <a target="_blank" rel="noopener" href="https://cmake.org/">cmake</a> in the latest version and i choosed 3.14. Someone said need add the cmake modules paths to the system. I haven’t added and it still worked.</p>
-<h3 id="3-Boost"><a href="#3-Boost" class="headerlink" title="3. Boost"></a>3. Boost</h3><p>Boost library has open resource in<br><a target="_blank" rel="noopener" href="http://www.boost.org/users/download/">http://www.boost.org/users/download/</a><br>and you can compile it to get the binary libaraies in you pc. For convenience, i downloaded the Boost(1.70.0) binary libraries in <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/boost/files/boost-binaries/">https://sourceforge.net/projects/boost/files/boost-binaries/</a><br>Unzip the Boost to any path, then add path/to/boost/lib64-msvc-14.1 to system Path. Add <em>BOOST_INCLUDEDIR</em> as path/to/Boost (mine is C:\local\boost_1_70_0) in your system path, Add <em>BOOST_LIBRARYDIR</em> as path/to/Boost library (mine is C:\local\boost_1_70_0\lib64-msvc-14.1) in your system path.</p>
-<h3 id="4-Install-CGAL"><a href="#4-Install-CGAL" class="headerlink" title="4. Install CGAL"></a>4. Install CGAL</h3><ol>
-<li>If none of the above steps goes wrong, you can begin to install CGAL libraries.Download the <a target="_blank" rel="noopener" href="https://www.cgal.org/">CGAL</a> and unzip to your pc.Please remember the path to it cause we will use it later. Add  CGAL_DIR as path/to/CGAL (mine is C:\dev\CGAL-4.13.1) and <em>C:\dev\CGAL-4.13.1\auxiliary\gmp\lib</em> in system path.</li>
-<li>Open CmakeGUI which you installed in step2, set the source code dir to path/to/CGAL (mine is C:/dev/CGAL-4.13.1), build the binaries dir to path wherever you like.(mine is C:\dev\CGAL-4.13.1\build).Then click the configure button and choose <strong><em>vs2017 win64</em></strong>. If there is no errors shown in screen, click build button.  </li>
-<li>Open the <strong><em>.sln</em></strong> file with <strong><em>vs2017 64</em></strong> in your build path you set in CmakeGUI, and build all projects both in debug and release mode.  </li>
-</ol>
-<p>Congratulations, you are finished to build the CGAL<br>binary libraries in the path/to/build/bin. For convenience, you should add this path to system path to use the CGAL in projects you like.  </p>
-<h2 id="Install-CGAL-demos-and-examples"><a href="#Install-CGAL-demos-and-examples" class="headerlink" title="Install CGAL demos and examples"></a>Install CGAL demos and examples</h2><p>For now, you maybe wanna build the CGAL demos and examples to learn how to use CGAL libraries.It still need  additional several Dependency Libraries. I just had installed Eigen3, TBB, Metis to build <em>Polyhedron</em> demo. Maybe you want to install all Dependency Libraries and I admire your courage and endurance. The instructions are similar as belows.  </p>
-<ol>
-<li>Eigen3<br>Download the <a target="_blank" rel="noopener" href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen3</a> library and unzip in anywhere you like.Set <em>EIGEN3_DIR</em> as path/to/Eigen3 (mine D:\Env\eigen3) in system path.  </li>
-<li>TBB<br>Download <a target="_blank" rel="noopener" href="https://github.com/intel/tbb/releases">TBB</a> and unzip in anywhere you like.Add path/to/tbb/bin/intel64/vc14 (D:\Env\tbb2019\bin\intel64\vc14),add <em>TBB_ARCH_PLATFORM</em> as <em>intel64\vc14</em> and  <em>TBBROOT</em> as path/to/tbb (D:\Env\tbb2019) to system path. <strong>Notes</strong>: No matter what your computer CPU is Intel or AMD, it all worked. Besides, AMD YES!  </li>
-<li>Metis<br>Download <a target="_blank" rel="noopener" href="http://glaros.dtc.umn.edu/gkhome/metis/metis/download">Metis</a> and unzip in <em>D:\Env\metis-5.1.0</em>. Using CmakeGUI to build the Metis binary files in <em>D:\Env\metis-5.1.0\build</em>.<br>I found the module which set to find the Metis libraries have many mistakes in 4.13.1 version. So I rewrited it as simple as possible in C:\dev\CGAL-4.13.1\cmake\modules\FindMETIS.cmake. You can download new <a target="_blank" rel="noopener" href="https://drive.google.com/open?id=1kitBPLU_BHbRE-c9cfAEDRD4mm460ffy">FindMETIS.cmake</a> to replace the old version.Then add <em>METIS_INCLUDE_DIR</em> as <em>D:\Env\metis-5.1.0\include</em> and “METIS_LIBRARY_DIR” as <em>D:\Env\metis-5.1.0\build\libmetis\Release</em> to system path.</li>
-</ol>
-<p>If you have any question or problem in above steps, you can make comment on my website. I will check it sometimes and reply. </p>
-<p>Good Luck, buddy<del>~</del></p>
+<div class="note success">
+            <p>To install cgal in the win10 with vs2017x64, you have to install several Dependency Libraries at first. </p>
+          </div>
 
+<h2 id="Package-amp-verison"><a href="#Package-amp-verison" class="headerlink" title="Package &amp; verison"></a>Package &amp; verison</h2><p>cgal 4.13<br>cmake 3.14<br>qt 5.12.3<br>boost 1.70.0 </p>
+<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/10/07/cgal-win10/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -346,7 +349,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/10/07/cagl-ubuntu/" class="post-title-link" itemprop="url">cagl-ubuntu</a>
+            <a href="/2020/10/07/cagl-ubuntu/" class="post-title-link" itemprop="url">Install CGAL in Ubuntu16&18</a>
         </h2>
 
         <div class="post-meta">
@@ -363,7 +366,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-10 20:47:17" itemprop="dateModified" datetime="2020-10-10T20:47:17+08:00">2020-10-10</time>
+                <time title="Modified: 2020-10-11 10:55:47" itemprop="dateModified" datetime="2020-10-11T10:55:47+08:00">2020-10-11</time>
               </span>
 
           
@@ -377,15 +380,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Install-CGAL-in-Ubuntu"><a href="#Install-CGAL-in-Ubuntu" class="headerlink" title="Install CGAL in Ubuntu"></a>Install CGAL in Ubuntu</h1><hr>
-<p>To install cgal in the latest Ubuntu, many tutorials pointed out to compile openResource by yourself. I tried to install all directly using <code>apt install </code> or <code>apt-get install</code>, it worked in Ubuntu 16.04. For Ubuntu 18.04, i thought it is same as before but it failed strangely. I will go on to make it.</p>
+          <div class="note success">
+            <p>To install cgal in the latest Ubuntu, many tutorials pointed out to compile openResource by yourself. I tried to install all directly using <code>apt install </code> or <code>apt-get install</code>, it worked in Ubuntu 16.04. For Ubuntu 18.04, i thought it is same as before but it failed strangely. I will go on to make it.</p>
+          </div>
+
 <h2 id="Dependency-Libraries"><a href="#Dependency-Libraries" class="headerlink" title="Dependency Libraries"></a>Dependency Libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libboost-all-dev libgmp-dev libgmp3-dev libmpfr-dev geomview</span><br><span class="line">sudo apt-get install freeglut3 freeglut3-dev</span><br><span class="line">sudo apt-get install binutils-gold</span><br><span class="line">sudo apt-get install libglew-dev</span><br><span class="line">sudo apt-get install g++</span><br><span class="line">sudo apt-get install mesa-common-dev</span><br><span class="line">sudo apt-get install cmake build-essential  </span><br><span class="line">sudo apt-get install libeigen3-dev</span><br><span class="line">sudo apt-get install libtbb-dev</span><br><span class="line">sudo apt-get install libmetis-dev libmetis5 </span><br><span class="line">sudo apt-get install zlib1g-dev</span><br></pre></td></tr></table></figure>
 
 <h2 id="Qt5"><a href="#Qt5" class="headerlink" title="Qt5"></a>Qt5</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qt5-default qtscript5-dev libqt5opengl5-dev libqt5svg5-dev libcgal-qt5-dev libcgal-ipelets  </span><br><span class="line"></span><br><span class="line">***In ubuntu16***  </span><br><span class="line">sudo apt-get install  libcgal11v5 libcgal-qt5-11 </span><br><span class="line"></span><br><span class="line">***In ubuntu18***  </span><br><span class="line">sudo apt-get install  libcgal13 libcgal-qt5-13 </span><br></pre></td></tr></table></figure>
-
-<h2 id="LibQGLviewer"><a href="#LibQGLviewer" class="headerlink" title="LibQGLviewer"></a>LibQGLviewer</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">***In ubuntu16***  </span><br><span class="line">sudo apt-get install libqglviewer-dev libqglviewer2  </span><br><span class="line"></span><br><span class="line">***In ubuntu18***  </span><br><span class="line">sudo apt-get install libqglviewer-dev-qt5 libqglviewer2-qt5</span><br></pre></td></tr></table></figure>
-
-<h2 id="Install-CGAL"><a href="#Install-CGAL" class="headerlink" title="Install CGAL"></a>Install CGAL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcgal-dev libcgal-demo</span><br><span class="line">mkdir <span class="variable">$HOME</span>/cgal &amp;&amp; <span class="built_in">cd</span> <span class="variable">$HOME</span>/cgal	     </span><br><span class="line">tar xzf /usr/share/doc/libcgal-demo/examples.tar.gz</span><br><span class="line">tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/10/07/cagl-ubuntu/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -585,10 +594,6 @@
 <script src="/js/next-boot.js"></script>
 
 
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-    <script defer src="/lib/three/canvas_sphere.min.js"></script>
 
 
   
