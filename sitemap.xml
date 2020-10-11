@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://ichbinkk.github.io/about/index.html</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/2020/10/07/cgal-win10/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/2020/10/10/igl-ubuntu/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/2020/10/07/cagl-ubuntu/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://ichbinkk.github.io/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/cgal/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/ubuntu/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/win10/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/igl/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
