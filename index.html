@@ -206,7 +206,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-15 19:35:39 / 修改时间：22:14:10" itemprop="dateCreated datePublished" datetime="2020-10-15T19:35:39+08:00">2020-10-15</time>
+              <time title="创建时间：2020-10-15 19:35:39 / 修改时间：22:17:19" itemprop="dateCreated datePublished" datetime="2020-10-15T19:35:39+08:00">2020-10-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,11 +244,14 @@
 
       
           <div class="note success">
-            <p>This part shows how to produce input files(*.mesh, *.tgf, *.dmat) for 403_BoundedBiharmonicWeights in igl Lib.</p>
+            <p>This blog shows how to produce input files(*.mesh, *.tgf, *.dmat) for 403_BoundedBiharmonicWeights in igl Lib.</p>
           </div>
 <p><code>tetgen -pqYV cube.off</code> -&gt; cube.1.node, cube.1.face, cube.1.smesh</p>
+<div class="note info">
+            <p>Introduce some files formats at first.</p>
+          </div>
+
 <h1 id="mesh-files"><a href="#mesh-files" class="headerlink" title=".mesh files"></a>.mesh files</h1><p>Medit’s triangle surface mesh + tetrahedral volume mesh file format.<br>This format is composed of a single (binary or text) data file. Its structure is organized as a series of fields identified by keywords. The blanks, ”newline” or &lt;&gt; and tabs are considered as item separators. A comment line starts with the character # and ends at the end of the line. The comments are placed exclusively between the fields.</p>
-<p>The mesh file must start with the descriptor:</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/10/15/generateFiles-for-403/#more" rel="contents">
