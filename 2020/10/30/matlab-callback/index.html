@@ -22,15 +22,20 @@
     var CONFIG = {"hostname":"ichbinkk.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ichbin KK">
-<meta property="og:url" content="https://ichbinkk.github.io/archives/2020/index.html">
+  <meta name="description" content="To create a demo to select points and show useful informations in Matlab gui.             Steps A custom callback function file, *.m file Call the callback function anywhere you need  Ste">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to create custom mouse callback using &#39;WindowButtonDownFcn&#39; function in matlab">
+<meta property="og:url" content="https://ichbinkk.github.io/2020/10/30/matlab-callback/index.html">
 <meta property="og:site_name" content="ichbin KK">
+<meta property="og:description" content="To create a demo to select points and show useful informations in Matlab gui.             Steps A custom callback function file, *.m file Call the callback function anywhere you need  Ste">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-30T06:10:38.000Z">
+<meta property="article:modified_time" content="2020-10-30T07:04:13.031Z">
 <meta property="article:author" content="K.K">
+<meta property="article:tag" content="matlab">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://ichbinkk.github.io/archives/2020/">
+<link rel="canonical" href="https://ichbinkk.github.io/2020/10/30/matlab-callback/">
 
 
 <script id="page-configurations">
@@ -38,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | ichbin KK</title>
+  <title>How to create custom mouse callback using 'WindowButtonDownFcn' function in matlab | ichbin KK</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180176194-1"></script>
     <script>
@@ -175,176 +180,134 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ichbinkk.github.io/2020/10/30/matlab-callback/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="K.K">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ichbin KK">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          How to create custom mouse callback using 'WindowButtonDownFcn' function in matlab
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-30 14:10:38 / 修改时间：15:04:13" itemprop="dateCreated datePublished" datetime="2020-10-30T14:10:38+08:00">2020-10-30</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 7 篇日志。 继续努力。</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/10/30/matlab-callback/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/10/30/matlab-callback/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <div class="note success">
+            <p>To create a demo to select points and show useful informations in Matlab gui.</p>
+          </div>
+
+<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><ul>
+<li>A custom callback function file, <code>*.m</code> file</li>
+<li>Call the callback function anywhere you need</li>
+</ul>
+<h3 id="Step-1-Custom-callback-function-file-format"><a href="#Step-1-Custom-callback-function-file-format" class="headerlink" title="Step 1: Custom callback function file format"></a>Step 1: Custom callback function file format</h3><p>I searched <code>callbackClickA3DPoint</code> function in Matlab File Exchange website.The codes is shown as following.</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callbackClickA3DPoint</span><span class="params">(src, eventData, pointCloud)</span></span></span><br><span class="line"><span class="comment">% CALLBACKCLICK3DPOINT mouse click callback function for CLICKA3DPOINT</span></span><br><span class="line"><span class="comment">%</span></span><br><span class="line"><span class="comment">%   The transformation between the viewing frame and the point cloud frame</span></span><br><span class="line"><span class="comment">%   is calculated using the camera viewing direction and the &#x27;up&#x27; vector.</span></span><br><span class="line"><span class="comment">%   Then, the point cloud is transformed into the viewing frame. Finally,</span></span><br><span class="line"><span class="comment">%   the z coordinate in this frame is ignored and the x and y coordinates</span></span><br><span class="line"><span class="comment">%   of all the points are compared with the mouse click location and the </span></span><br><span class="line"><span class="comment">%   closest point is selected.</span></span><br><span class="line"><span class="comment">%</span></span><br><span class="line"><span class="comment">%   Babak Taati - May 4, 2005</span></span><br><span class="line"><span class="comment">%   revised Oct 31, 2007</span></span><br><span class="line"><span class="comment">%   revised Jun 3, 2008</span></span><br><span class="line"><span class="comment">%   revised May 19, 2009</span></span><br><span class="line"><span class="keyword">global</span> indexOfPoints</span><br><span class="line"></span><br><span class="line">point = get(gca, <span class="string">&#x27;CurrentPoint&#x27;</span>); <span class="comment">% mouse click position</span></span><br><span class="line">camPos = get(gca, <span class="string">&#x27;CameraPosition&#x27;</span>); <span class="comment">% camera position</span></span><br><span class="line">camTgt = get(gca, <span class="string">&#x27;CameraTarget&#x27;</span>); <span class="comment">% where the camera is pointing to</span></span><br><span class="line"></span><br><span class="line">camDir = camPos - camTgt; <span class="comment">% camera direction</span></span><br><span class="line">camUpVect = get(gca, <span class="string">&#x27;CameraUpVector&#x27;</span>); <span class="comment">% camera &#x27;up&#x27; vector</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% build an orthonormal frame based on the viewing direction and the </span></span><br><span class="line"><span class="comment">% up vector (the &quot;view frame&quot;)</span></span><br><span class="line">zAxis = camDir/norm(camDir);    </span><br><span class="line">upAxis = camUpVect/norm(camUpVect); </span><br><span class="line">xAxis = <span class="built_in">cross</span>(upAxis, zAxis);</span><br><span class="line">yAxis = <span class="built_in">cross</span>(zAxis, xAxis);</span><br><span class="line"></span><br><span class="line">rot = [xAxis; yAxis; zAxis]; <span class="comment">% view rotation </span></span><br><span class="line"></span><br><span class="line"><span class="comment">% the point cloud represented in the view frame</span></span><br><span class="line">rotatedPointCloud = rot * pointCloud; </span><br><span class="line"></span><br><span class="line"><span class="comment">% the clicked point represented in the view frame</span></span><br><span class="line">rotatedPointFront = rot * point&#x27; ;</span><br><span class="line"></span><br><span class="line"><span class="comment">% find the nearest neighbour to the clicked point </span></span><br><span class="line">pointCloudIndex = dsearchn(rotatedPointCloud(<span class="number">1</span>:<span class="number">2</span>,:)&#x27;, ... </span><br><span class="line">    rotatedPointFront(<span class="number">1</span>:<span class="number">2</span>));</span><br><span class="line"></span><br><span class="line">h = findobj(gca,<span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;pt&#x27;</span>); <span class="comment">% try to find the old point</span></span><br><span class="line">selectedPoint = pointCloud(:, pointCloudIndex); </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">isempty</span>(h) <span class="comment">% if it&#x27;s the first click (i.e. no previous point to delete)</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">% highlight the selected point</span></span><br><span class="line">    h = <span class="built_in">plot3</span>(selectedPoint(<span class="number">1</span>,:), selectedPoint(<span class="number">2</span>,:), ...</span><br><span class="line">        selectedPoint(<span class="number">3</span>,:), <span class="string">&#x27;r.&#x27;</span>, <span class="string">&#x27;MarkerSize&#x27;</span>, <span class="number">20</span>); </span><br><span class="line">    set(h,<span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;pt&#x27;</span>); <span class="comment">% set its Tag property for later use   </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span> <span class="comment">% if it is not the first click</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%     delete(h); % delete the previously selected point</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">% highlight the newly selected point</span></span><br><span class="line">    h = <span class="built_in">plot3</span>(selectedPoint(<span class="number">1</span>,:), selectedPoint(<span class="number">2</span>,:), ...</span><br><span class="line">        selectedPoint(<span class="number">3</span>,:), <span class="string">&#x27;r.&#x27;</span>, <span class="string">&#x27;MarkerSize&#x27;</span>, <span class="number">20</span>);  </span><br><span class="line">    set(h,<span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;pt&#x27;</span>);  <span class="comment">% set its Tag property for later use</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">&#x27;you clicked on point number %d\n&#x27;</span>, pointCloudIndex);</span><br><span class="line">indexOfPoints = [indexOfPoints;pointCloudIndex];</span><br></pre></td></tr></table></figure>
+<h3 id="Step-2-Call-the-function"><a href="#Step-2-Call-the-function" class="headerlink" title="Step 2: Call the function"></a>Step 2: Call the function</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">set</span>(gcf, <span class="string">&#x27;WindowButtonDownFcn&#x27;</span>, &#123;<span class="variable">@callbackClickA3DPoint</span>, v&#x27;&#125;); </span><br></pre></td></tr></table></figure>
+<p>The <code>v</code> can transmit data to <code>pointCloud</code>. It is worth noting that the callback function cannot transmit data to main function.If you want to get back data, you can declare <code>global</code> variable in both callback function and main function. Such as:</p>
+<figure class="highlight gml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">global</span> <span class="symbol">x</span></span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-30T14:10:38+08:00"
-              content="2020-10-30">
-          10-30
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="K.K 微信支付">
+        <p>微信支付</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/30/matlab-callback/" itemprop="url">
-            <span itemprop="name">How to create custom mouse callback using 'WindowButtonDownFcn' function in matlab</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-16T19:55:28+08:00"
-              content="2020-10-16">
-          10-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/16/cmake-igl-project/" itemprop="url">
-            <span itemprop="name">Generate igl project using CMakeLists file</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-15T19:35:39+08:00"
-              content="2020-10-15">
-          10-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/15/generateFiles-for-403/" itemprop="url">
-            <span itemprop="name">Generate Files for igl 403 tutorial</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-11T16:52:01+08:00"
-              content="2020-10-11">
-          10-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/11/hexo-FAQs/" itemprop="url">
-            <span itemprop="name">Hexo+Next主题搭建个人博客常见问题总结</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-10T10:45:25+08:00"
-              content="2020-10-10">
-          10-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/10/igl-ubuntu/" itemprop="url">
-            <span itemprop="name">Install igl in Ubuntu</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-07T21:55:49+08:00"
-              content="2020-10-07">
-          10-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/07/cgal-win10/" itemprop="url">
-            <span itemprop="name">Install CGAL and Demos in win10+msvc2017x64</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-07T20:11:55+08:00"
-              content="2020-10-07">
-          10-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/07/cagl-ubuntu/" itemprop="url">
-            <span itemprop="name">Install CGAL in Ubuntu16&18</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/matlab/" rel="tag"># matlab</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/16/cmake-igl-project/" rel="prev" title="Generate igl project using CMakeLists file">
+      <i class="fa fa-chevron-left"></i> Generate igl project using CMakeLists file
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -391,6 +354,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Steps"><span class="nav-number">1.</span> <span class="nav-text">Steps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1-Custom-callback-function-file-format"><span class="nav-number">1.1.</span> <span class="nav-text">Step 1: Custom callback function file format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-Call-the-function"><span class="nav-number">1.2.</span> <span class="nav-text">Step 2: Call the function</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
