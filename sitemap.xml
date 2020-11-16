@@ -88,13 +88,6 @@
 
   
   <url>
-    <loc>https://ichbinkk.github.io/tags/pdf/</loc>
-    <lastmod>2020-11-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ichbinkk.github.io/tags/cgal/</loc>
     <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
@@ -103,6 +96,13 @@
   
   <url>
     <loc>https://ichbinkk.github.io/tags/ubuntu/</loc>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ichbinkk.github.io/tags/pdf/</loc>
     <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
