@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ichbinkk.github.io/2020/11/16/catalog-pdf/</loc>
+    
+    <lastmod>2020-11-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ichbinkk.github.io/2020/10/30/matlab-callback/</loc>
     
     <lastmod>2020-10-30</lastmod>
@@ -74,78 +81,85 @@
 
   <url>
     <loc>https://ichbinkk.github.io/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://ichbinkk.github.io/tags/pdf/</loc>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ichbinkk.github.io/tags/cgal/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/ubuntu/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/win10/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/igl/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/cmake/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/Hexo/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/Next/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/%E6%A0%87%E7%AD%BE%E4%BA%91/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/excerpt/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/tags/matlab/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -154,28 +168,28 @@
   
   <url>
     <loc>https://ichbinkk.github.io/categories/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85cgal%E5%BA%93/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/categories/igl-tutorials/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/categories/Hexo-Next%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ichbinkk.github.io/categories/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85igl%E5%BA%93/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
